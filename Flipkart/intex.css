@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+}
+
+.background {
+    position: relative;
+    top: 60px;
+    background-image: linear-gradient(to top, #0290f5, white);
+    height: 600px;
+    z-index: -1;
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 300px;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+#card1 {
+    z-index: 10;
+    margin-top: -100px;
+    margin-left: 30px;
+}
+
+#home {
+    margin-left: 100px;
+
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#bb {
+    gap: 50px;
+}
+
+#bc {
+    background-color: white;
+}
+
+#head {
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.why {
+    width: 250px;
+    padding-left: 40px;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+}
+
+.address h6 {
+    margin-bottom: 0;
+}
+
+.address p {
+    margin-top: 0;
+}
+
+.ctr {
+    margin-top: 30px;
+}
+
+.o {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(8, 8, 8);
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.fo {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#un {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.foo {
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+
+#d {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    background-color: black;
+}
+
+.in:hover {
+    color: aqua;
+    position: relative;
+    left: 10px;
+
+}
+
+#g {
+    margin-bottom: 30px;
+}
+
+@media all and (max-width: 576px) {
+    .fo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #d {
+        padding-left: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    #un {
+        
+        position: relative;
+        left: -80px;
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #of {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width: 577px) and (max-width: 768px) {
+    #d{
+        height: 60px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
